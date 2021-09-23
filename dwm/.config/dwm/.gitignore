@@ -1,0 +1,8 @@
+drw.o
+dwm
+dwm.o
+dwm.c.orig
+util.o
+config.h.bak
+config.h.orig
+*.diff

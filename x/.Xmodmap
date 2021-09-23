@@ -1,0 +1,20 @@
+clear lock
+
+! make caps lock the Escape button
+keycode 66 = Escape
+
+! make the Escape button the grave 
+! ducky:
+keycode 9 = grave 
+
+!!!!!!! other keyboards:
+! keycode 9 = grave asciitilde
+! make Alt_R and Alt_L as super keys, and make Super_L as Alt
+! remove mod1 = Alt_L
+! remove mod4 = Super_L
+! remove mod1 = Alt_R
+! keycode 133 = Alt_L
+! keycode 64 = Super_L
+! keycode 108 = Super_R
+! add mod1 = Alt_L  
+! add mod4 = Super_L

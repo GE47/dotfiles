@@ -1,0 +1,10 @@
+#Faster key repeat and delay
+xset r rate 210 40
+# Japanese input
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+#Stop screen from going blank
+xset s off
+xset -dpms
+xset s noblank

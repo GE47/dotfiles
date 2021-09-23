@@ -1,0 +1,89 @@
+{
+  //auto formating
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "scss",
+    "markdown",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "dart"
+  ],
+
+  //coc-paris
+  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+
+  //flutter
+  "flutter.autoOpenDevLog": false,
+
+  //snippets
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "typescript": ["javascript"]
+  },
+
+  "suggest.languageSourcePriority": 99,
+  "snippets.priority": 5,
+  "coc.source.file.priority": 4,
+  "coc.source.around.priority": 3,
+  "coc.source.buffer.priority": 2,
+  "emmet.priority": 1,
+
+  //lua
+  "Lua.diagnostics.globals": ["vim"],
+
+  // emmet
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+
+  //dignostics lables
+  "diagnostic.virtualTextPrefix": " ",
+  "diagnostic.enableSign": false,
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": " ",
+  "diagnostic.hintSign": " ",
+  "diagnostic.virtualText": true,
+  "diagnostic.messageDelay": 0,
+  "diagnostic.enableMessage": "always",
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.enableHighlightLineNumber": true,
+
+  //suggest lables
+  "suggest.completionItemKindLabels": {
+    "method": "   (Method)",
+    "function": "   (Function)",
+    "variable": "[] (Variable)",
+    "field": " ﴲ  (Field)",
+    "typeParameter": "   (TypeParameter)",
+    "constant": " ﲀ  (Constant)",
+    "class": "   (Class)",
+    "interface": " ﰮ  (Interface)",
+    "struct": " ﳤ  (Struct)",
+    "event": "   (Event)",
+    "operator": "   (Operator)",
+    "module": "   (Module)",
+    "property": " 襁 (Property)",
+    "enum": " 練 (Enum)",
+    "reference": "   (Reference)",
+    "keyword": "   (Keyword)",
+    "file": "   (File)",
+    "folder": "   (Folder)",
+    "color": "   (Color)",
+    "unit": "   (Unit)",
+    "snippet": "   (Snippet)",
+    "text": "   (Text) ",
+    "constructor": "   (Constructor)",
+    "value": "   (Value)",
+    "enumMember": "   (EnumMember)",
+    "default": "  "
+  }
+}
