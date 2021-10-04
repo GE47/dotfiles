@@ -50,6 +50,7 @@ static const Rule rules[] = {
 	/*{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },*/
 	{ "discord",    NULL,         NULL,       1 << 2,       0,            1 },
 	{ "zoom",       NULL,         NULL,           0,        1,           -1 },
+	{ "Steam",       NULL,         NULL,           0,        1,           -1 },
 	{ "obs",        NULL,         NULL,           1 << 3,        0,       1 },
 };
 
