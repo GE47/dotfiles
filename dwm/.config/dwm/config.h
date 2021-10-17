@@ -114,7 +114,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("feh --bg-scale --randomize /mnt/Media/wallpapers/*") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("mpv --player-operation-mode=pseudo-gui") },
 	{ MODKEY,                       XK_n,      spawn,          {.v = netoworkdmenucmd } },
-	{ MODKEY|ShiftMask,             XK_n,      spawn,          SHCMD("kitty -e nmtui") },
+	{ MODKEY|ShiftMask,             XK_n,      spawn,          SHCMD("nm-connection-editor") },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
