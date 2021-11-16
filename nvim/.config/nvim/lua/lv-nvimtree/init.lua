@@ -4,7 +4,6 @@ local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 
 vim.g.nvim_tree_git_hl = 1
 vim.g.nvim_tree_root_folder_modifier =':t'
-vim.g.nvim_tree_hide_dotfiles = 1 -- 0 by default, this option hides files and folders starting with a dot `.`
 vim.g.nvim_tree_indent_markers = 1 -- "0 by default, this option shows indent markers when folders are open
 
 vim.g.nvim_tree_show_icons = {
@@ -48,6 +47,10 @@ require'nvim-tree'.setup {
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
+  filters = {
+    dotfiles = true,
+    custom = {}
+    },
   update_focused_file = {
     enable      = false,
     update_cwd  = false,
