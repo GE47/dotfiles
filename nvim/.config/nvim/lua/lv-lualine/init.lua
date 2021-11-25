@@ -3,10 +3,7 @@ local luaLine=require('lualine');
 luaLine.setup{
  options = {
     icons_enabled = true,
-    theme = 'tokyonight',
-    -- theme = 'tokyodark',
-    -- theme = 'material-nvim',
-    -- theme = 'gruvbox-flat',
+    theme = 'nightfox',
     component_separators = {'', ''},
     section_separators = {' ', ' '},
     disabled_filetypes = {}
