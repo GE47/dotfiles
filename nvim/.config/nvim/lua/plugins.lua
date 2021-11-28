@@ -125,6 +125,7 @@ return require("packer").startup(
         use {'marko-cerovac/material.nvim', opt = true}
         use {'eddyekofo94/gruvbox-flat.nvim', opt = true}
         use {'EdenEast/nightfox.nvim', opt = true}
+        use {'Mofiqul/dracula.nvim', opt = true , as="dracula"}
 
         -- Icons
         use {'kyazdani42/nvim-web-devicons', opt = true}
@@ -143,6 +144,7 @@ return require("packer").startup(
         require_plugin('onedark.nvim')
         require_plugin('gruvbox-flat.nvim')
         require_plugin('nightfox.nvim')
+        require_plugin('dracula')
         require_plugin('vim-snippets')
         require_plugin('vscode-es7-javascript-react-snippets')
         require_plugin('popup.nvim')

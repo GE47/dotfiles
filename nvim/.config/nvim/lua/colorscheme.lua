@@ -33,6 +33,12 @@ nightfox.setup({
 nightfox.load()
 ---------
 
+-- dracula
+-- vim.g.dracula_transparent_bg = false
+
+-- vim.cmd('colorscheme dracula')
+-------
+
 -- material theme
 -- vim.g.material_disable_background = true
 -- vim.g.material_contrast=false
