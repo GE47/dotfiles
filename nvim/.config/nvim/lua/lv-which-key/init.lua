@@ -92,8 +92,8 @@ local mappings = {
     -- b for buffer
     b = {
         name = "Buffer",
-        ["]"] = {"<cmd>BufferNext<cr>","Next Buffer"},
-        ["["] = {"<cmd>BufferPrevious<cr>","Previous Buffer"},
+        l = {"<cmd>BufferNext<cr>","Next Buffer"},
+        h = {"<cmd>BufferPrevious<cr>","Previous Buffer"},
         d = {"<cmd>BufferClose<cr>", "Delete Buffer"},
         i = {"<cmd>BufferPick<cr>","Pick Buffer"},
     },
