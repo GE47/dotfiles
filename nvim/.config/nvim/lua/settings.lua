@@ -43,9 +43,9 @@ opt.titlestring     = "%<%F%=%l/%L - nvim"      -- what the title of the window 
 -- opt.undofile        = true                      -- enable persisten undo
 opt.updatetime      = 300                       -- faster completion
 opt.expandtab       = true                      -- convert tabs to spaces
-opt.shiftwidth      = 4                         -- the number of spaces inserted for each indentation
+opt.shiftwidth      = 2                         -- the number of spaces inserted for each indentation
 opt.shortmess:append("c")                       -- don't pass messages to |ins-completion-menu|
-opt.tabstop         = 4                         -- insert 4 spaces for a tab
+opt.tabstop         = 2                         -- insert 2 spaces for a tab
 opt.cursorline      = true                      -- highlight the current line
 opt.number          = true                      -- set numbered lines
 opt.relativenumber  = false                     -- set relative numbered lines
