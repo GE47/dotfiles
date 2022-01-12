@@ -1,4 +1,7 @@
 {
+  //misc
+  "coc.preferences.useQuickfixForLocations": true,
+
   //auto formating
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
