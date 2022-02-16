@@ -79,7 +79,7 @@ wk.register({
         ["<leader>/"] = {"Comment Toggle"},
         ["<leader>;"] = {"<cmd>Dashboard<cr>", "Dashboard"},
         ["<leader>?"] = {"<cmd>NvimTreeFindFile<cr>", "Current File in Explorer"},
-        ["<leader>e"] = {"<cmd>lua require'lv-nvimtree'.toggle_tree()<cr>", "Explorer"},
+        ["<leader>e"] = {"<cmd>NvimTreeToggle<cr>", "Explorer"},
         ["<leader>h"] = {"<cmd>split<cr>", "Split Window Horizontal"},
         ["<leader>v"] = {"<cmd>vsplit<cr>", "Split Window Vertical"},
         ["<leader>H"] = {"<cmd>let @/ = ''<cr>", "No Highlight"},
