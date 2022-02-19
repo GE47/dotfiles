@@ -23,6 +23,13 @@ local mappings = {
     { "<C-j>", "<C-\\><C-N><C-w>j" },
     { "<C-k>", "<C-\\><C-N><C-w>k" },
     { "<C-l>", "<C-\\><C-N><C-w>l" },
+
+    -- Disable arrow keys while using shift
+    {"<S-Up>",""},
+    {"<S-Down>",""},
+    {"<S-Left>",""},
+    {"<S-Right>",""},
+
   },
   n = { -- Normal mode
     -- Better window movement
@@ -37,6 +44,15 @@ local mappings = {
     { "<A-k>", ":resize +2<CR>" },
     { "<A-h>", ":vertical resize -2<CR>" },
     { "<A-l>", ":vertical resize +2<CR>" },
+
+    -- Disable arrow keys
+    {"<Up>",""},
+    {"<Down>",""},
+    {"<Left>",""},
+    {"<Right>",""},
+
+    -- disable write and quit buffer with ZZ
+    {"ZZ",""}
   },
 
   t = { -- Terminal mode
@@ -63,5 +79,11 @@ local mappings = {
 
 register_mappings(mappings, { silent = true, noremap = true })
 
+-- navigate lsp results
+vim.cmd 'inoremap <expr> <Down> ("\\<C-n>")'
+vim.cmd 'inoremap <expr> <Up> ("\\<C-p>")'
 vim.cmd 'inoremap <expr> <c-j> ("\\<C-n>")'
 vim.cmd 'inoremap <expr> <c-k> ("\\<C-p>")'
+
+-- remap :W to :w
+vim.cmd 'cnoreabbrev <expr> W getcmdtype() == ":" && getcmdline() == "W" ? "w" : "W"'
