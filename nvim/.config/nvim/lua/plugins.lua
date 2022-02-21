@@ -162,7 +162,7 @@ return require("packer").startup(
         require_plugin('nvim-web-devicons')
         require_plugin('lualine.nvim')
         require_plugin('barbar.nvim')
-        require_plugin('indent-blankline.nvim')
+        -- require_plugin('indent-blankline.nvim')
         require_plugin('vim-repeat')
         require_plugin('vim-surround')
         require_plugin('nvim-colorizer.lua')
