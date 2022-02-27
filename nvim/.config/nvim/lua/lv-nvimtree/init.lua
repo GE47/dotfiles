@@ -45,15 +45,15 @@ require'nvim-tree'.setup {
   },
   auto_close          = false,
   open_on_tab         = false,
-  hijack_cursor       = false,
-  update_cwd          = false,
+  hijack_cursor       = true,
+  update_cwd          = true,
   filters = {
     dotfiles = true,
     custom = {}
     },
   update_focused_file = {
-    enable      = false,
-    update_cwd  = false,
+    enable      = true,
+    update_cwd  = true,
     ignore_list = {}
   },
   system_open = {
