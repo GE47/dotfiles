@@ -1,28 +1,22 @@
-require('plugins')
-require('settings')
-require('utils')
-require('keymappings')
-vim.cmd('source ~/.config/nvim/vimscript/lv-barbar/init.vim')
-require('lv-nvimtree')
-require('colorscheme')
-require('lv-lualine')
-require('lv-comment')
-require('lv-dashboard')
-require('lv-telescope')
-require('lv-gitsigns')
-require('lv-treesitter')
-require('lv-rnvimr')
-require('lv-quickscope')
-require('lv-hop')
-require('toggle-term')
-require('lv-which-key')
-require('lv-zen-mode')
-require('lv-colorizer')
-require('lv-indent-blankline')
-require('lv-compe')
-require('lv-orgmode')
-
-vim.cmd('source ~/.config/nvim/vimscript/lv-suda/init.vim')
-
--- coc
-vim.cmd('source ~/.config/nvim/vimscript/lv-coc/init.vim')
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.autopairs"
+require "user.comment"
+require "user.gitsigns"
+require "user.nvim-tree"
+require "user.bufferline"
+require "user.lualine"
+require "user.toggleterm"
+require "user.project"
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.whichkey"
+require "user.autocommands"
+require "user.hop"
