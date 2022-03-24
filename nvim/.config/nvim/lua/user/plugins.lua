@@ -84,6 +84,7 @@ return packer.startup(function(use)
 	use("williamboman/nvim-lsp-installer")
 	use("tamago324/nlsp-settings.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use("ray-x/lsp_signature.nvim")
 
 	-- Treesitter
 	use({
