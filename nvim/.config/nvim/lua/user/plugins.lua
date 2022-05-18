@@ -87,6 +87,9 @@ return packer.startup(function(use)
 	use("ray-x/lsp_signature.nvim")
 	use("windwp/nvim-ts-autotag")
 
+	-- Markdown Preview
+	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
+
 	-- Treesitter
 	use({
 		"nvim-treesitter/nvim-treesitter",
