@@ -22,6 +22,7 @@ cpupower
 discord
 droidcam
 droidcam-obs-plugin-git
+dmenu
 ecryptfs-utils
 emacs
 engrampa
@@ -41,7 +42,6 @@ gcolor2
 gnome-disk-utility
 gnome-icon-theme
 go
-gomi
 gparted
 grub-theme-manjaro
 gtkhash-thunar
