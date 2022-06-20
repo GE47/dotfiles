@@ -1,26 +1,3 @@
-vim.g.nvim_tree_icons = {
-	default = "",
-	symlink = "",
-	git = {
-		unstaged = "",
-		staged = "✓",
-		unmerged = "",
-		renamed = "➜",
-		deleted = "",
-		untracked = "★",
-		ignored = "◌",
-	},
-	folder = {
-		default = "",
-		open = "",
-		empty = "",
-		empty_open = "",
-		symlink = "",
-	},
-}
-
-vim.g.nvim_tree_root_folder_modifier = ":t"
-
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
 	return
@@ -77,6 +54,7 @@ nvim_tree.setup({
 		timeout = 500,
 	},
 	renderer = {
+    root_folder_modifier = ":t",
 		indent_markers = {
 			enable = false,
 			icons = {
@@ -88,7 +66,27 @@ nvim_tree.setup({
 		icons = {
 			webdev_colors = true,
 			git_placement = "before",
-		},
+      glyphs={
+      default = "",
+      symlink = "",
+      git = {
+        unstaged = "",
+        staged = "✓",
+        unmerged = "",
+        renamed = "➜",
+        deleted = "",
+        untracked = "★",
+        ignored = "◌",
+        },
+      folder = {
+        default = "",
+        open = "",
+        empty = "",
+        empty_open = "",
+        symlink = "",
+        },
+      }
+  },
 	},
 	view = {
 		width = 30,
@@ -119,7 +117,7 @@ nvim_tree.setup({
 			restrict_above_cwd = false,
 		},
 		open_file = {
-			quit_on_open = true,
+			quit_on_open = false,
 			resize_window = true,
 			window_picker = {
 				enable = true,
