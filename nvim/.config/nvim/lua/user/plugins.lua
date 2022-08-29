@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("tpope/vim-repeat")
 	use("phaazon/hop.nvim")
 	use("nvim-telescope/telescope.nvim")
+  use("karb94/neoscroll.nvim")
 
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
