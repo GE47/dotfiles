@@ -65,6 +65,10 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope.nvim")
   use("karb94/neoscroll.nvim")
 
+  -- debugger
+  -- install netcoredbg from the sytem package manager for c#
+  use('mfussenegger/nvim-dap')
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
 
